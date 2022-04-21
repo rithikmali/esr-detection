@@ -35,7 +35,7 @@ int main()
         const std::vector<double>& mfcc = gist.getMelFrequencyCepstralCoefficients();
         for (int j=0; j<mfcc.size(); ++j)
         {
-            gsl_matrix_set(input, 1, (i/hop)+j, mfcc[j]);
+            gsl_matrix_set(input, 1, ((i/hop)*nt)+j, mfcc[j]);
         }
         gsl_matrix_set(input, 1, (nt*13) + i/hop, zcr);
     }

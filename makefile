@@ -1,13 +1,13 @@
-LDFLAGS = -lgsl -lgslcblas -lm
+LDFLAGS = -lgsl -lgslcblas -lm -lsndfile -DUSE_KISS_FFT
 
 a: test.o inference.o
-	gcc test.o inference.o -o a $(LDFLAGS)
+	g++ test.o inference.o -o a $(LDFLAGS)
 
-test.o: test.c inference.h
-	gcc -c test.c inference.h
+test.o: test.cpp inference.hpp
+	g++ -c test.cpp inference.hpp
 
-inference.o: inference.c inference.h
-	gcc -c inference.c inference.h
+inference.o: inference.cpp inference.hpp
+	g++ -c inference.cpp inference.hpp
 
 clean:
 	-rm -f test.o inference.o inference.h.gch

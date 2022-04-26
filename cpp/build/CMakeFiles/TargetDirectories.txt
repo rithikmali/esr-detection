@@ -1,0 +1,8 @@
+/mnt/c/Users/rithi/data/ssir/final/build/CMakeFiles/test.dir
+/mnt/c/Users/rithi/data/ssir/final/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/rithi/data/ssir/final/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/rithi/data/ssir/final/build/Gist/CMakeFiles/edit_cache.dir
+/mnt/c/Users/rithi/data/ssir/final/build/Gist/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/rithi/data/ssir/final/build/Gist/src/CMakeFiles/Gist.dir
+/mnt/c/Users/rithi/data/ssir/final/build/Gist/src/CMakeFiles/edit_cache.dir
+/mnt/c/Users/rithi/data/ssir/final/build/Gist/src/CMakeFiles/rebuild_cache.dir

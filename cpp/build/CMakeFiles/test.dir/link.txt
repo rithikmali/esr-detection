@@ -1,0 +1,1 @@
+/usr/bin/c++ -DUSE_KISS_FFT -I/usr/local/include/ -L /usr/local/lib/ CMakeFiles/test.dir/test.cpp.o CMakeFiles/test.dir/inference.cpp.o CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o -o test  -lgslcblas Gist/src/libGist.a -lsndfile -lgsl -lm 

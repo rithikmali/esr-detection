@@ -1,8 +1,30 @@
 #include"inference.h"
 using namespace std;
-int main()
+int main(int argc, char* argv[])
 {
-    const char* inp = "ex2.wav";
+    std::string USAGE = "./build/test : ESR detection\n";
+    USAGE += "OPTIONS\n";
+    USAGE += "--input           : Input 16 bit PCM Wave file\n";
+    USAGE += "USAGE EXAMPLES\n";
+    USAGE += "./build/test --input input.wav\n";
+
+    char *inp = getCmdOption(argv, argv+argc, "--input");
+    // const char* inp = "ex2.wav";
+    
+    // Check arguments
+    if (!inp) {
+        std::cout << USAGE;
+        return 1;
+    }
+
+    //check if file exists
+    std::ifstream wavFp;
+    wavFp.open(inp);
+    if (!wavFp.is_open()) {
+        std::cerr << "Unable to open input file: " << inp << std::endl;
+        return 1;
+    }
+    wavFp.close();
 
     //init the model weights
     gsl_matrix * alpha = gsl_matrix_alloc(5208, 100);

@@ -1,5 +1,12 @@
 #include"inference.h"
 
+// A simple option parser
+char* getCmdOption(char **begin, char **end, const std::string &value) {
+    char **iter = std::find(begin, end, value);
+    if (iter != end && ++iter != end)
+        return *iter;
+    return nullptr;
+}
 
 void my_load_matrix( const char* filename, int size, gsl_matrix * m)
 {

@@ -11,6 +11,8 @@
 #include <iostream>
 #include <fstream>
 #include "mfcc.cpp"
+
+char* getCmdOption(char **begin, char **end, const std::string &value);
 void my_load_matrix(const char* filename, int size, gsl_matrix * m);
 double sigmoid(double x);
 void predict(gsl_matrix* input, gsl_matrix* alpha, gsl_matrix* beta, gsl_matrix* output);

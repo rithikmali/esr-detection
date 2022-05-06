@@ -1,8 +1,0 @@
-/mnt/d/data/github/esr-detection/cpp/build/CMakeFiles/test.dir
-/mnt/d/data/github/esr-detection/cpp/build/CMakeFiles/edit_cache.dir
-/mnt/d/data/github/esr-detection/cpp/build/CMakeFiles/rebuild_cache.dir
-/mnt/d/data/github/esr-detection/cpp/build/Gist/CMakeFiles/edit_cache.dir
-/mnt/d/data/github/esr-detection/cpp/build/Gist/CMakeFiles/rebuild_cache.dir
-/mnt/d/data/github/esr-detection/cpp/build/Gist/src/CMakeFiles/Gist.dir
-/mnt/d/data/github/esr-detection/cpp/build/Gist/src/CMakeFiles/edit_cache.dir
-/mnt/d/data/github/esr-detection/cpp/build/Gist/src/CMakeFiles/rebuild_cache.dir

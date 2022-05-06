@@ -60,3 +60,134 @@ double sigmoid(double x)
     double d1 = 1.0;
     return d1 / (d1 + gsl_expm1(-x) + d1);
 }
+
+void get_zcr(gsl_matrix* input, double* a, int n_frames)
+{
+
+    int frameSize = 2048;
+    int sampleRate = 48000;
+    int hop = 512;
+    Gist<double> gist(frameSize, sampleRate);
+    int nt = ((n_frames-frameSize)/hop)+1;
+
+    // double pa[pn_frames];
+    // for (int i = 0; i < pn_frames; ++i)
+    // {
+    //     if (i<1024)
+    //     {
+    //         pa[i] = a[0];
+    //     }
+    //     else if (i>n_frames+1024)
+    //     {
+    //         pa[i] = a[n_frames-1];
+    //     }
+    //     else
+    //     {
+    //         pa[i] = a[i-1024];
+    //     }
+    // }
+
+    double audioFrame[frameSize];
+    for (int i = 0; i < n_frames-frameSize; i+=hop)
+    {
+        for(int j=0; j<frameSize; ++j)
+        {
+            audioFrame[j] = a[i+j];
+        }
+        gist.processAudioFrame (audioFrame, frameSize);
+        double zcr = gist.zeroCrossingRate();
+        gsl_matrix_set(input, 0, (nt*13) + i/hop, zcr/frameSize);
+    }
+}
+
+void get_mfcc(gsl_matrix * input, double* a, int n_frames)
+{
+
+    int frameSize = 2048;
+    int sampleRate = 48000;
+    int hop = 512;
+    Gist<double> gist (frameSize, sampleRate);
+    int nt = ((n_frames-frameSize)/hop)+1;
+
+    double audioFrame[frameSize];
+    for (int i = 0; i < n_frames-frameSize; i+=hop)
+    {
+        for(int j=0; j<frameSize; ++j)
+        {
+            audioFrame[j] = a[i+j];
+        }
+        gist.processAudioFrame (audioFrame, frameSize);
+
+        const std::vector<double>& mfcc = gist.getMelFrequencyCepstralCoefficients();
+        for (int j=0; j<mfcc.size(); ++j)
+        {
+            gsl_matrix_set(input, 0, (j*nt)+(i/hop), mfcc[j]);
+        }
+    }
+}
+
+void get_mfcc1(gsl_matrix * input, double* a, int n_frames)
+{
+
+    int pn_frames = n_frames+2048;
+
+    int frameSize = 2048;
+    int sampleRate = 48000;
+    int hop = 512;
+    Gist<double> gist(frameSize, sampleRate);
+    int nt = ((pn_frames-frameSize)/hop)+1;
+
+    double pa[pn_frames];
+    for (int i = 0; i < pn_frames; ++i)
+    {
+        if (i<1024)
+        {
+            pa[i] = a[0];
+        }
+        else if (i>n_frames+1024)
+        {
+            pa[i] = a[n_frames-1];
+        }
+        else
+        {
+            pa[i] = a[i-1024];
+        }
+    }
+
+    double audioFrame[frameSize];
+    for (int i = 0; i < pn_frames-frameSize; i+=hop)
+    {
+        for(int j=0; j<frameSize; ++j)
+        {
+            audioFrame[j] = pa[i+j];
+        }
+        gist.processAudioFrame (audioFrame, frameSize);
+
+        const std::vector<double>& mfcc = gist.getMelFrequencyCepstralCoefficients();
+        if(i==0)
+            printf("mfcc size: %ld\n",mfcc.size());
+        for (int j=0; j<mfcc.size(); ++j)
+        {
+            gsl_matrix_set(input, 0, (j*nt)+(i/hop), mfcc[j]);
+        }
+    }
+}
+
+void get_stl_mfcc(gsl_matrix * input, const char *wavPath, int n_frames)
+{
+    int numCepstra = 12;
+    int numFilters = 40;
+    int samplingRate = 48000;
+    int winLength = 2048;
+    int frameShift = 512;
+    int lowFreq = 50;
+    int highFreq = samplingRate/2;
+    std::ifstream wavFp;
+
+    wavFp.open(wavPath);
+    myMFCC mfccComputer (samplingRate, numCepstra, winLength, frameShift, numFilters, lowFreq, highFreq);
+    
+    mfccComputer.process (wavFp, input, n_frames);
+    wavFp.close();
+
+}

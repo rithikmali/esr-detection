@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/rithi/data/ssir/final
+CMAKE_SOURCE_DIR = /mnt/d/data/github/esr-detection/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/rithi/data/ssir/final/build
+CMAKE_BINARY_DIR = /mnt/d/data/github/esr-detection/cpp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test.dir/depend.make
@@ -72,44 +72,44 @@ include CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/test.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/test.cpp.o: ../test.cpp
 CMakeFiles/test.dir/test.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/rithi/data/ssir/final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/test.cpp.o -MF CMakeFiles/test.dir/test.cpp.o.d -o CMakeFiles/test.dir/test.cpp.o -c /mnt/c/Users/rithi/data/ssir/final/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/data/github/esr-detection/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/test.cpp.o -MF CMakeFiles/test.dir/test.cpp.o.d -o CMakeFiles/test.dir/test.cpp.o -c /mnt/d/data/github/esr-detection/cpp/test.cpp
 
 CMakeFiles/test.dir/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/rithi/data/ssir/final/test.cpp > CMakeFiles/test.dir/test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/data/github/esr-detection/cpp/test.cpp > CMakeFiles/test.dir/test.cpp.i
 
 CMakeFiles/test.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/rithi/data/ssir/final/test.cpp -o CMakeFiles/test.dir/test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/data/github/esr-detection/cpp/test.cpp -o CMakeFiles/test.dir/test.cpp.s
 
 CMakeFiles/test.dir/inference.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/inference.cpp.o: ../inference.cpp
 CMakeFiles/test.dir/inference.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/rithi/data/ssir/final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/inference.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/inference.cpp.o -MF CMakeFiles/test.dir/inference.cpp.o.d -o CMakeFiles/test.dir/inference.cpp.o -c /mnt/c/Users/rithi/data/ssir/final/inference.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/data/github/esr-detection/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/inference.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/inference.cpp.o -MF CMakeFiles/test.dir/inference.cpp.o.d -o CMakeFiles/test.dir/inference.cpp.o -c /mnt/d/data/github/esr-detection/cpp/inference.cpp
 
 CMakeFiles/test.dir/inference.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/inference.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/rithi/data/ssir/final/inference.cpp > CMakeFiles/test.dir/inference.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/data/github/esr-detection/cpp/inference.cpp > CMakeFiles/test.dir/inference.cpp.i
 
 CMakeFiles/test.dir/inference.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/inference.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/rithi/data/ssir/final/inference.cpp -o CMakeFiles/test.dir/inference.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/data/github/esr-detection/cpp/inference.cpp -o CMakeFiles/test.dir/inference.cpp.s
 
 CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o: ../Gist/libs/kiss_fft130/kiss_fft.c
 CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/rithi/data/ssir/final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o -MF CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o.d -o CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o -c /mnt/c/Users/rithi/data/ssir/final/Gist/libs/kiss_fft130/kiss_fft.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/data/github/esr-detection/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o -MF CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o.d -o CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o -c /mnt/d/data/github/esr-detection/cpp/Gist/libs/kiss_fft130/kiss_fft.c
 
 CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/rithi/data/ssir/final/Gist/libs/kiss_fft130/kiss_fft.c > CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/data/github/esr-detection/cpp/Gist/libs/kiss_fft130/kiss_fft.c > CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.i
 
 CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/rithi/data/ssir/final/Gist/libs/kiss_fft130/kiss_fft.c -o CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/data/github/esr-detection/cpp/Gist/libs/kiss_fft130/kiss_fft.c -o CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.s
 
 # Object files for target test
 test_OBJECTS = \
@@ -126,7 +126,7 @@ test: CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o
 test: CMakeFiles/test.dir/build.make
 test: Gist/src/libGist.a
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/rithi/data/ssir/final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/data/github/esr-detection/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +138,6 @@ CMakeFiles/test.dir/clean:
 .PHONY : CMakeFiles/test.dir/clean
 
 CMakeFiles/test.dir/depend:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/rithi/data/ssir/final /mnt/c/Users/rithi/data/ssir/final /mnt/c/Users/rithi/data/ssir/final/build /mnt/c/Users/rithi/data/ssir/final/build /mnt/c/Users/rithi/data/ssir/final/build/CMakeFiles/test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/d/data/github/esr-detection/cpp /mnt/d/data/github/esr-detection/cpp /mnt/d/data/github/esr-detection/cpp/build /mnt/d/data/github/esr-detection/cpp/build /mnt/d/data/github/esr-detection/cpp/build/CMakeFiles/test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test.dir/depend
 

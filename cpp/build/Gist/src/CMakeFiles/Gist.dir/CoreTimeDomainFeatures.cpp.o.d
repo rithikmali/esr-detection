@@ -1,7 +1,7 @@
 Gist/src/CMakeFiles/Gist.dir/CoreTimeDomainFeatures.cpp.o: \
- /mnt/c/Users/rithi/data/ssir/final/Gist/src/CoreTimeDomainFeatures.cpp \
+ /mnt/d/data/github/esr-detection/cpp/Gist/src/CoreTimeDomainFeatures.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/rithi/data/ssir/final/Gist/src/CoreTimeDomainFeatures.h \
+ /mnt/d/data/github/esr-detection/cpp/Gist/src/CoreTimeDomainFeatures.h \
  /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

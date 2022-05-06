@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/rithi/data/ssir/final
+CMAKE_SOURCE_DIR = /mnt/d/data/github/esr-detection/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/rithi/data/ssir/final/build
+CMAKE_BINARY_DIR = /mnt/d/data/github/esr-detection/cpp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/rithi/data/ssir/final/build/CMakeFiles /mnt/c/Users/rithi/data/ssir/final/build/Gist/src//CMakeFiles/progress.marks
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Gist/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/rithi/data/ssir/final/build/CMakeFiles 0
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/data/github/esr-detection/cpp/build/CMakeFiles /mnt/d/data/github/esr-detection/cpp/build/Gist/src//CMakeFiles/progress.marks
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Gist/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/data/github/esr-detection/cpp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Gist/src/clean
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Gist/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Gist/src/preinstall
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Gist/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Gist/src/preinstall
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Gist/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Gist/src/CMakeFiles/Gist.dir/rule:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Gist/src/CMakeFiles/Gist.dir/rule
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Gist/src/CMakeFiles/Gist.dir/rule
 .PHONY : Gist/src/CMakeFiles/Gist.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ Gist: Gist/src/CMakeFiles/Gist.dir/rule
 
 # fast build rule for target.
 Gist/fast:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/build
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/build
 .PHONY : Gist/fast
 
 AccelerateFFT.o: AccelerateFFT.cpp.o
@@ -135,7 +135,7 @@ AccelerateFFT.o: AccelerateFFT.cpp.o
 
 # target to build an object file
 AccelerateFFT.cpp.o:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/AccelerateFFT.cpp.o
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/AccelerateFFT.cpp.o
 .PHONY : AccelerateFFT.cpp.o
 
 AccelerateFFT.i: AccelerateFFT.cpp.i
@@ -143,7 +143,7 @@ AccelerateFFT.i: AccelerateFFT.cpp.i
 
 # target to preprocess a source file
 AccelerateFFT.cpp.i:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/AccelerateFFT.cpp.i
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/AccelerateFFT.cpp.i
 .PHONY : AccelerateFFT.cpp.i
 
 AccelerateFFT.s: AccelerateFFT.cpp.s
@@ -151,7 +151,7 @@ AccelerateFFT.s: AccelerateFFT.cpp.s
 
 # target to generate assembly for a file
 AccelerateFFT.cpp.s:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/AccelerateFFT.cpp.s
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/AccelerateFFT.cpp.s
 .PHONY : AccelerateFFT.cpp.s
 
 CoreFrequencyDomainFeatures.o: CoreFrequencyDomainFeatures.cpp.o
@@ -159,7 +159,7 @@ CoreFrequencyDomainFeatures.o: CoreFrequencyDomainFeatures.cpp.o
 
 # target to build an object file
 CoreFrequencyDomainFeatures.cpp.o:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/CoreFrequencyDomainFeatures.cpp.o
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/CoreFrequencyDomainFeatures.cpp.o
 .PHONY : CoreFrequencyDomainFeatures.cpp.o
 
 CoreFrequencyDomainFeatures.i: CoreFrequencyDomainFeatures.cpp.i
@@ -167,7 +167,7 @@ CoreFrequencyDomainFeatures.i: CoreFrequencyDomainFeatures.cpp.i
 
 # target to preprocess a source file
 CoreFrequencyDomainFeatures.cpp.i:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/CoreFrequencyDomainFeatures.cpp.i
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/CoreFrequencyDomainFeatures.cpp.i
 .PHONY : CoreFrequencyDomainFeatures.cpp.i
 
 CoreFrequencyDomainFeatures.s: CoreFrequencyDomainFeatures.cpp.s
@@ -175,7 +175,7 @@ CoreFrequencyDomainFeatures.s: CoreFrequencyDomainFeatures.cpp.s
 
 # target to generate assembly for a file
 CoreFrequencyDomainFeatures.cpp.s:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/CoreFrequencyDomainFeatures.cpp.s
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/CoreFrequencyDomainFeatures.cpp.s
 .PHONY : CoreFrequencyDomainFeatures.cpp.s
 
 CoreTimeDomainFeatures.o: CoreTimeDomainFeatures.cpp.o
@@ -183,7 +183,7 @@ CoreTimeDomainFeatures.o: CoreTimeDomainFeatures.cpp.o
 
 # target to build an object file
 CoreTimeDomainFeatures.cpp.o:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/CoreTimeDomainFeatures.cpp.o
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/CoreTimeDomainFeatures.cpp.o
 .PHONY : CoreTimeDomainFeatures.cpp.o
 
 CoreTimeDomainFeatures.i: CoreTimeDomainFeatures.cpp.i
@@ -191,7 +191,7 @@ CoreTimeDomainFeatures.i: CoreTimeDomainFeatures.cpp.i
 
 # target to preprocess a source file
 CoreTimeDomainFeatures.cpp.i:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/CoreTimeDomainFeatures.cpp.i
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/CoreTimeDomainFeatures.cpp.i
 .PHONY : CoreTimeDomainFeatures.cpp.i
 
 CoreTimeDomainFeatures.s: CoreTimeDomainFeatures.cpp.s
@@ -199,7 +199,7 @@ CoreTimeDomainFeatures.s: CoreTimeDomainFeatures.cpp.s
 
 # target to generate assembly for a file
 CoreTimeDomainFeatures.cpp.s:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/CoreTimeDomainFeatures.cpp.s
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/CoreTimeDomainFeatures.cpp.s
 .PHONY : CoreTimeDomainFeatures.cpp.s
 
 Gist.o: Gist.cpp.o
@@ -207,7 +207,7 @@ Gist.o: Gist.cpp.o
 
 # target to build an object file
 Gist.cpp.o:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/Gist.cpp.o
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/Gist.cpp.o
 .PHONY : Gist.cpp.o
 
 Gist.i: Gist.cpp.i
@@ -215,7 +215,7 @@ Gist.i: Gist.cpp.i
 
 # target to preprocess a source file
 Gist.cpp.i:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/Gist.cpp.i
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/Gist.cpp.i
 .PHONY : Gist.cpp.i
 
 Gist.s: Gist.cpp.s
@@ -223,7 +223,7 @@ Gist.s: Gist.cpp.s
 
 # target to generate assembly for a file
 Gist.cpp.s:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/Gist.cpp.s
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/Gist.cpp.s
 .PHONY : Gist.cpp.s
 
 MFCC.o: MFCC.cpp.o
@@ -231,7 +231,7 @@ MFCC.o: MFCC.cpp.o
 
 # target to build an object file
 MFCC.cpp.o:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/MFCC.cpp.o
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/MFCC.cpp.o
 .PHONY : MFCC.cpp.o
 
 MFCC.i: MFCC.cpp.i
@@ -239,7 +239,7 @@ MFCC.i: MFCC.cpp.i
 
 # target to preprocess a source file
 MFCC.cpp.i:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/MFCC.cpp.i
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/MFCC.cpp.i
 .PHONY : MFCC.cpp.i
 
 MFCC.s: MFCC.cpp.s
@@ -247,7 +247,7 @@ MFCC.s: MFCC.cpp.s
 
 # target to generate assembly for a file
 MFCC.cpp.s:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/MFCC.cpp.s
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/MFCC.cpp.s
 .PHONY : MFCC.cpp.s
 
 OnsetDetectionFunction.o: OnsetDetectionFunction.cpp.o
@@ -255,7 +255,7 @@ OnsetDetectionFunction.o: OnsetDetectionFunction.cpp.o
 
 # target to build an object file
 OnsetDetectionFunction.cpp.o:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/OnsetDetectionFunction.cpp.o
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/OnsetDetectionFunction.cpp.o
 .PHONY : OnsetDetectionFunction.cpp.o
 
 OnsetDetectionFunction.i: OnsetDetectionFunction.cpp.i
@@ -263,7 +263,7 @@ OnsetDetectionFunction.i: OnsetDetectionFunction.cpp.i
 
 # target to preprocess a source file
 OnsetDetectionFunction.cpp.i:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/OnsetDetectionFunction.cpp.i
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/OnsetDetectionFunction.cpp.i
 .PHONY : OnsetDetectionFunction.cpp.i
 
 OnsetDetectionFunction.s: OnsetDetectionFunction.cpp.s
@@ -271,7 +271,7 @@ OnsetDetectionFunction.s: OnsetDetectionFunction.cpp.s
 
 # target to generate assembly for a file
 OnsetDetectionFunction.cpp.s:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/OnsetDetectionFunction.cpp.s
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/OnsetDetectionFunction.cpp.s
 .PHONY : OnsetDetectionFunction.cpp.s
 
 WindowFunctions.o: WindowFunctions.cpp.o
@@ -279,7 +279,7 @@ WindowFunctions.o: WindowFunctions.cpp.o
 
 # target to build an object file
 WindowFunctions.cpp.o:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/WindowFunctions.cpp.o
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/WindowFunctions.cpp.o
 .PHONY : WindowFunctions.cpp.o
 
 WindowFunctions.i: WindowFunctions.cpp.i
@@ -287,7 +287,7 @@ WindowFunctions.i: WindowFunctions.cpp.i
 
 # target to preprocess a source file
 WindowFunctions.cpp.i:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/WindowFunctions.cpp.i
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/WindowFunctions.cpp.i
 .PHONY : WindowFunctions.cpp.i
 
 WindowFunctions.s: WindowFunctions.cpp.s
@@ -295,7 +295,7 @@ WindowFunctions.s: WindowFunctions.cpp.s
 
 # target to generate assembly for a file
 WindowFunctions.cpp.s:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/WindowFunctions.cpp.s
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/WindowFunctions.cpp.s
 .PHONY : WindowFunctions.cpp.s
 
 Yin.o: Yin.cpp.o
@@ -303,7 +303,7 @@ Yin.o: Yin.cpp.o
 
 # target to build an object file
 Yin.cpp.o:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/Yin.cpp.o
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/Yin.cpp.o
 .PHONY : Yin.cpp.o
 
 Yin.i: Yin.cpp.i
@@ -311,7 +311,7 @@ Yin.i: Yin.cpp.i
 
 # target to preprocess a source file
 Yin.cpp.i:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/Yin.cpp.i
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/Yin.cpp.i
 .PHONY : Yin.cpp.i
 
 Yin.s: Yin.cpp.s
@@ -319,7 +319,7 @@ Yin.s: Yin.cpp.s
 
 # target to generate assembly for a file
 Yin.cpp.s:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/Yin.cpp.s
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(MAKE) $(MAKESILENT) -f Gist/src/CMakeFiles/Gist.dir/build.make Gist/src/CMakeFiles/Gist.dir/Yin.cpp.s
 .PHONY : Yin.cpp.s
 
 # Help Target
@@ -366,6 +366,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/c/Users/rithi/data/ssir/final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/d/data/github/esr-detection/cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

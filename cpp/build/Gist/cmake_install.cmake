@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/rithi/data/ssir/final/Gist
+# Install script for directory: /mnt/d/data/github/esr-detection/cpp/Gist
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/c/Users/rithi/data/ssir/final/build/Gist/src/cmake_install.cmake")
+  include("/mnt/d/data/github/esr-detection/cpp/build/Gist/src/cmake_install.cmake")
 
 endif()
 

@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/rithi/data/ssir/final/Gist/src
+# Install script for directory: /mnt/d/data/github/esr-detection/cpp/Gist/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

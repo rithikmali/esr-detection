@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/rithi/data/ssir/final
+# Install script for directory: /mnt/d/data/github/esr-detection/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/c/Users/rithi/data/ssir/final/build/Gist/cmake_install.cmake")
+  include("/mnt/d/data/github/esr-detection/cpp/build/Gist/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/rithi/data/ssir/final/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/d/data/github/esr-detection/cpp/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

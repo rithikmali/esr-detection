@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DUSE_KISS_FFT
 
-CXX_INCLUDES = -I/mnt/c/Users/rithi/data/ssir/final/Gist/src/src -I/mnt/c/Users/rithi/data/ssir/final/Gist/src/../libs/kiss_fft130
+CXX_INCLUDES = -I/mnt/d/data/github/esr-detection/cpp/Gist/src/src -I/mnt/d/data/github/esr-detection/cpp/Gist/src/../libs/kiss_fft130
 
-CXX_FLAGS = -DUSE_KISS_FFT -I/usr/local/include/ -L /usr/local/lib/ -std=gnu++11
+CXX_FLAGS = -DUSE_KISS_FFT -std=gnu++11
 

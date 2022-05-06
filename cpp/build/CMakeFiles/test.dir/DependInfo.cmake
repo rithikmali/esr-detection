@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/rithi/data/ssir/final/Gist/libs/kiss_fft130/kiss_fft.c" "CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o" "gcc" "CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o.d"
-  "/mnt/c/Users/rithi/data/ssir/final/inference.cpp" "CMakeFiles/test.dir/inference.cpp.o" "gcc" "CMakeFiles/test.dir/inference.cpp.o.d"
-  "/mnt/c/Users/rithi/data/ssir/final/test.cpp" "CMakeFiles/test.dir/test.cpp.o" "gcc" "CMakeFiles/test.dir/test.cpp.o.d"
+  "/mnt/d/data/github/esr-detection/cpp/Gist/libs/kiss_fft130/kiss_fft.c" "CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o" "gcc" "CMakeFiles/test.dir/Gist/libs/kiss_fft130/kiss_fft.c.o.d"
+  "/mnt/d/data/github/esr-detection/cpp/inference.cpp" "CMakeFiles/test.dir/inference.cpp.o" "gcc" "CMakeFiles/test.dir/inference.cpp.o.d"
+  "/mnt/d/data/github/esr-detection/cpp/test.cpp" "CMakeFiles/test.dir/test.cpp.o" "gcc" "CMakeFiles/test.dir/test.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/mnt/c/Users/rithi/data/ssir/final/build/Gist/src/CMakeFiles/Gist.dir/DependInfo.cmake"
+  "/mnt/d/data/github/esr-detection/cpp/build/Gist/src/CMakeFiles/Gist.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

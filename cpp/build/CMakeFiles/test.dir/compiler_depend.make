@@ -349,7 +349,36 @@ CMakeFiles/test.dir/inference.cpp.o: ../inference.cpp \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/istream \
-  /usr/include/c++/9/bits/istream.tcc
+  /usr/include/c++/9/bits/istream.tcc \
+  /usr/include/c++/9/algorithm \
+  /usr/include/c++/9/utility \
+  /usr/include/c++/9/bits/stl_relops.h \
+  /usr/include/c++/9/bits/stl_algo.h \
+  /usr/include/c++/9/bits/algorithmfwd.h \
+  /usr/include/c++/9/bits/stl_heap.h \
+  /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/uniform_int_dist.h \
+  /usr/include/c++/9/limits \
+  /usr/include/c++/9/fstream \
+  /usr/include/c++/9/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
+  /usr/include/c++/9/bits/fstream.tcc \
+  ../compute-mfcc/mfcc.cpp \
+  /usr/include/c++/9/complex \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
+  /usr/include/c++/9/map \
+  /usr/include/c++/9/bits/stl_tree.h \
+  /usr/include/c++/9/ext/aligned_buffer.h \
+  /usr/include/c++/9/bits/stl_map.h \
+  /usr/include/c++/9/tuple \
+  /usr/include/c++/9/array \
+  /usr/include/c++/9/bits/uses_allocator.h \
+  /usr/include/c++/9/bits/invoke.h \
+  /usr/include/c++/9/bits/stl_multimap.h \
+  /usr/include/c++/9/bits/erase_if.h \
+  ../compute-mfcc/wavHeader.h
 
 CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
   /usr/include/stdc-predef.h \
@@ -624,10 +653,79 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/istream \
-  /usr/include/c++/9/bits/istream.tcc
+  /usr/include/c++/9/bits/istream.tcc \
+  /usr/include/c++/9/algorithm \
+  /usr/include/c++/9/utility \
+  /usr/include/c++/9/bits/stl_relops.h \
+  /usr/include/c++/9/bits/stl_algo.h \
+  /usr/include/c++/9/bits/algorithmfwd.h \
+  /usr/include/c++/9/bits/stl_heap.h \
+  /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/uniform_int_dist.h \
+  /usr/include/c++/9/limits \
+  /usr/include/c++/9/fstream \
+  /usr/include/c++/9/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
+  /usr/include/c++/9/bits/fstream.tcc \
+  ../compute-mfcc/mfcc.cpp \
+  /usr/include/c++/9/complex \
+  /usr/include/c++/9/sstream \
+  /usr/include/c++/9/bits/sstream.tcc \
+  /usr/include/c++/9/map \
+  /usr/include/c++/9/bits/stl_tree.h \
+  /usr/include/c++/9/ext/aligned_buffer.h \
+  /usr/include/c++/9/bits/stl_map.h \
+  /usr/include/c++/9/tuple \
+  /usr/include/c++/9/array \
+  /usr/include/c++/9/bits/uses_allocator.h \
+  /usr/include/c++/9/bits/invoke.h \
+  /usr/include/c++/9/bits/stl_multimap.h \
+  /usr/include/c++/9/bits/erase_if.h \
+  ../compute-mfcc/wavHeader.h
 
 
 ../test.cpp:
+
+../compute-mfcc/wavHeader.h:
+
+/usr/include/c++/9/bits/erase_if.h:
+
+/usr/include/c++/9/bits/stl_multimap.h:
+
+/usr/include/c++/9/bits/invoke.h:
+
+/usr/include/c++/9/bits/uses_allocator.h:
+
+/usr/include/c++/9/array:
+
+/usr/include/c++/9/ext/aligned_buffer.h:
+
+/usr/include/c++/9/map:
+
+/usr/include/c++/9/bits/sstream.tcc:
+
+/usr/include/c++/9/complex:
+
+../compute-mfcc/mfcc.cpp:
+
+/usr/include/c++/9/bits/fstream.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h:
+
+/usr/include/c++/9/fstream:
+
+/usr/include/c++/9/bits/uniform_int_dist.h:
+
+/usr/include/c++/9/bits/algorithmfwd.h:
+
+/usr/include/c++/9/bits/stl_algo.h:
+
+/usr/include/c++/9/bits/stl_relops.h:
+
+/usr/include/c++/9/utility:
 
 /usr/include/c++/9/istream:
 
@@ -681,6 +779,8 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 
 /usr/include/gsl/gsl_vector_long_double.h:
 
+/usr/include/c++/9/algorithm:
+
 /usr/include/gsl/gsl_complex.h:
 
 /usr/include/gsl/gsl_block_int.h:
@@ -711,6 +811,8 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 
 /usr/include/c++/9/bits/vector.tcc:
 
+/usr/include/c++/9/bits/stl_tempbuf.h:
+
 /usr/include/c++/9/cstdlib:
 
 /usr/include/alloca.h:
@@ -734,6 +836,8 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 /usr/include/gsl/gsl_vector_double.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/c++/9/limits:
 
 /usr/include/c++/9/bits/cxxabi_forced.h:
 
@@ -867,6 +971,8 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
+/usr/include/c++/9/bits/stl_tree.h:
+
 /usr/include/c++/9/bits/stl_vector.h:
 
 /usr/include/c++/9/cstdint:
@@ -874,6 +980,8 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 /usr/include/gsl/gsl_vector_int.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h:
+
+/usr/include/c++/9/bits/codecvt.h:
 
 /usr/include/features.h:
 
@@ -910,6 +1018,8 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/gsl/gsl_block_double.h:
+
+/usr/include/c++/9/tuple:
 
 /usr/include/c++/9/bits/stl_function.h:
 
@@ -1027,6 +1137,8 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 
 /usr/include/c++/9/vector:
 
+/usr/include/c++/9/bits/stl_map.h:
+
 /usr/include/c++/9/bits/functexcept.h:
 
 /usr/include/c++/9/bits/stl_iterator.h:
@@ -1077,6 +1189,8 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 
 /usr/include/c++/9/cstdio:
 
+/usr/include/c++/9/sstream:
+
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/c++/9/typeinfo:
@@ -1090,6 +1204,8 @@ CMakeFiles/test.dir/test.cpp.o: ../test.cpp \
 /usr/include/c++/9/bits/localefwd.h:
 
 /usr/include/c++/9/ext/alloc_traits.h:
+
+/usr/include/c++/9/bits/stl_heap.h:
 
 /usr/include/c++/9/bits/basic_ios.tcc:
 

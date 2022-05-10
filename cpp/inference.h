@@ -17,6 +17,4 @@ void my_load_matrix(const char* filename, int size, gsl_matrix * m);
 double sigmoid(double x);
 void predict(gsl_matrix* input, gsl_matrix* alpha, gsl_matrix* beta, gsl_matrix* output);
 void get_zcr(gsl_matrix* input, double* a, int n_frames);
-void get_mfcc(gsl_matrix * input, double* a, int n_frames);
-void get_mfcc1(gsl_matrix * input, double* a, int n_frames);
 void get_stl_mfcc(gsl_matrix * input, const char *wavFp, int n_frames);

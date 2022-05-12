@@ -5,7 +5,7 @@
 #include<stdlib.h>
 #include <vector>
 #include <sndfile.h>
-#include <Gist.h>
+// #include <Gist.h>
 #include<iostream>
 #include <algorithm>
 #include <iostream>

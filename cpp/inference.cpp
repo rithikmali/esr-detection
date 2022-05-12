@@ -77,18 +77,34 @@ void get_zcr(gsl_matrix* input, double* a, int n_frames)
     int frameSize = 2048;
     int sampleRate = 48000;
     int hop = 512;
-    Gist<double> gist(frameSize, sampleRate);
+    // Gist<double> gist(frameSize, sampleRate);
     int nt = ((n_frames-frameSize)/hop)+1;
 
-    double audioFrame[frameSize];
+    
+
+    // double audioFrame[frameSize];
     for (int i = 0; i < n_frames-frameSize; i+=hop)
     {
-        for(int j=0; j<frameSize; ++j)
+        double zcr = 0;
+        
+        // for each audio sample, starting from the second one
+        for (int j = i+1; j < i+frameSize; j++)
         {
-            audioFrame[j] = a[i+j];
+            // initialise two booleans indicating whether or not
+            // the current and previous sample are positive
+            bool current = (a[j] > 0);
+            bool previous = (a[j - 1] > 0);
+
+            // if the sign is different
+            if (current != previous)
+            {
+                // add one to the zero crossing rate
+                zcr = zcr + 1.0;
+            }
         }
-        gist.processAudioFrame (audioFrame, frameSize);
-        double zcr = gist.zeroCrossingRate();
+        
+        // gist.processAudioFrame (audioFrame, frameSize);
+        // double zcr = gist.zeroCrossingRate();
         gsl_matrix_set(input, 0, (nt*13) + i/hop, zcr/frameSize);
     }
 }

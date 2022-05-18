@@ -32,16 +32,22 @@ int main(int argc, char* argv[])
     gsl_matrix * input = gsl_matrix_alloc(1,5208);
 
     //read wav file to double array
-    SF_INFO inFileInfo;
-    SNDFILE *file = sf_open(inp, SFM_READ, &inFileInfo);
-    int n_frames = inFileInfo.frames;
-    double a[n_frames];
-    sf_read_double (file, a, n_frames);
-    sf_close(file);
+    // SF_INFO inFileInfo;
+    // SNDFILE *file = sf_open(inp, SFM_READ, &inFileInfo);
+    // int n_frames = inFileInfo.frames;
+    // double a[n_frames];
+    // sf_read_double (file, a, n_frames);
+    // sf_close(file);
+
+    AudioFile<double> audioFile;
+    audioFile.load (inp);
+    int n_frames = audioFile.getNumSamplesPerChannel();
+    int sampleRate = audioFile.getSampleRate();
+    auto a = audioFile.samples[0];
+
 
     //set the samplerate, framesize and hop size
     int frameSize = 2048;
-    int sampleRate = 48000;
     int hop = 512;
     int nt = ((n_frames-frameSize)/hop)+1;
 
@@ -50,8 +56,8 @@ int main(int argc, char* argv[])
     get_stl_mfcc(input, inp, n_frames);
 
     //load the model weights from file
-    my_load_matrix("alpha.txt", 100, alpha);
-    my_load_matrix("beta.txt", 2, beta);
+    my_load_matrix("model/alpha.txt", 100, alpha);
+    my_load_matrix("model/beta.txt", 2, beta);
 
     //predict the output
     predict(input, alpha, beta, output);

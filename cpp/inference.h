@@ -4,8 +4,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include <vector>
-#include <sndfile.h>
-// #include <Gist.h>
+// #include <sndfile.h>
+#include "AudioFile.h"
 #include<iostream>
 #include <algorithm>
 #include <iostream>
@@ -16,5 +16,5 @@ char* getCmdOption(char **begin, char **end, const std::string &value);
 void my_load_matrix(const char* filename, int size, gsl_matrix * m);
 double sigmoid(double x);
 void predict(gsl_matrix* input, gsl_matrix* alpha, gsl_matrix* beta, gsl_matrix* output);
-void get_zcr(gsl_matrix* input, double* a, int n_frames);
+void get_zcr(gsl_matrix* input, std::vector<double> a, int n_frames);
 void get_stl_mfcc(gsl_matrix * input, const char *wavFp, int n_frames);

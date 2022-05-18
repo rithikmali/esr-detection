@@ -71,7 +71,7 @@ double sigmoid(double x)
 }
 
 //populate input matrix with zcr
-void get_zcr(gsl_matrix* input, double* a, int n_frames)
+void get_zcr(gsl_matrix* input, std::vector<double> a, int n_frames)
 {
 
     int frameSize = 2048;

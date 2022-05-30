@@ -9,8 +9,8 @@ char* getCmdOption(char **begin, char **end, const std::string &value) {
 }
 
 //load matrix from text file
-void my_load_matrix( const char* filename, int size, gsl_matrix * m)
-{
+template <size_t rows, size_t cols>
+void my_load_matrix(const char* filename, int size, float (&m)[rows][cols]){
     FILE* fp = fopen(filename, "r");
     if (!fp)
         return;
@@ -25,7 +25,8 @@ void my_load_matrix( const char* filename, int size, gsl_matrix * m)
         if (c == ',')
         {
             cnum[ci] = '\0';
-            gsl_matrix_set (m, i, j, atof(cnum));
+            m[i][j] = atof(cnum);
+            // gsl_matrix_set (m, i, j, atof(cnum));
             // gsl_matrix_set (m, i, j, strtod(cnum,&ptr));
             if (j == size - 1)
             {
@@ -48,7 +49,8 @@ void my_load_matrix( const char* filename, int size, gsl_matrix * m)
 }
 
 //predict the output from given input
-void predict(gsl_matrix* input, gsl_matrix* alpha, gsl_matrix* beta, gsl_matrix* output)
+#if 0
+void predict_gsl(gsl_matrix* input, gsl_matrix* alpha, gsl_matrix* beta, gsl_matrix* output)
 {
     gsl_matrix* h = gsl_matrix_alloc(1,100);
     gsl_blas_dgemm(CblasNoTrans, CblasNoTrans, 1.0, input, alpha, 0.0, h);
@@ -64,14 +66,27 @@ void predict(gsl_matrix* input, gsl_matrix* alpha, gsl_matrix* beta, gsl_matrix*
     gsl_matrix_free(h);
 }
 
-double sigmoid(double x)
+float sigmoid(float x)
 {
-    double d1 = 1.0;
+    float d1 = 1.0;
     return d1 / (d1 + gsl_expm1(-x) + d1);
 }
 
+#endif
+
+void predict(float* input, float* alpha, float* beta, float* output)
+{
+    float z[100];
+    float sig_z[100];
+    void* pScr;
+    mtx_mpyf ( pScr, z, input, alpha, 1, 5208, 100);
+    vec_sigmoidf(sig_z, z, 100);
+    mtx_mpyf ( pScr, output, sig_z, beta, 1, 100, 2);
+}
+
+
 //populate input matrix with zcr
-void get_zcr(gsl_matrix* input, std::vector<double> a, int n_frames)
+void get_zcr(float (*input)[5208], float *a, int n_frames)
 {
 
     int frameSize = 2048;
@@ -85,7 +100,7 @@ void get_zcr(gsl_matrix* input, std::vector<double> a, int n_frames)
     // double audioFrame[frameSize];
     for (int i = 0; i < n_frames-frameSize; i+=hop)
     {
-        double zcr = 0;
+        float zcr = 0;
         
         // for each audio sample, starting from the second one
         for (int j = i+1; j < i+frameSize; j++)
@@ -105,12 +120,14 @@ void get_zcr(gsl_matrix* input, std::vector<double> a, int n_frames)
         
         // gist.processAudioFrame (audioFrame, frameSize);
         // double zcr = gist.zeroCrossingRate();
-        gsl_matrix_set(input, 0, (nt*13) + i/hop, zcr/frameSize);
+        int temp = (nt*13) + i/hop;
+        input[0][temp] = zcr/frameSize;
+        // gsl_matrix_set(input, 0, (nt*13) + i/hop, zcr/frameSize);
     }
 }
 
 //populate input matrix with mfcc
-void get_stl_mfcc(gsl_matrix * input, const char *wavPath, int n_frames)
+void get_stl_mfcc(float (*input)[5208], const char *wavPath, int n_frames)
 {
     int numCepstra = 12;
     int numFilters = 40;

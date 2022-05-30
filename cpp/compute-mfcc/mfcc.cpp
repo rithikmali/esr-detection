@@ -256,7 +256,7 @@ public:
     }
 
     // Read input file stream, extract MFCCs and write to output file stream
-    int process (std::ifstream &wavFp, gsl_matrix * input, int n_frames) {
+    int process (std::ifstream &wavFp, float (*input)[5208], int n_frames) {
         // Read the wav header    
         wavHeader hdr;
         int headerSize = sizeof(wavHeader);
@@ -308,7 +308,9 @@ public:
             processFrame(buffer, bufferLength);
             for (int j=0; j<mfcc.size(); ++j)
             {
-                gsl_matrix_set(input, 0, (j*nt)+(i/hop), mfcc[j]);
+                // gsl_matrix_set(input, 0, (j*nt)+(i/hop), mfcc[j]);
+                int temp = (j*nt)+(i/hop);
+                input[0][temp] = mfcc[j];
             }
             i+=hop;
             wavFp.read((char *) buffer, bufferLength*bufferBPS);

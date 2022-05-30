@@ -26,10 +26,14 @@ int main(int argc, char* argv[])
     wavFp.close();
 
     //init the model weights
-    gsl_matrix * alpha = gsl_matrix_alloc(5208, 100);
-    gsl_matrix * beta = gsl_matrix_alloc(100,2);
-    gsl_matrix * output = gsl_matrix_alloc(1,2);
-    gsl_matrix * input = gsl_matrix_alloc(1,5208);
+    // gsl_matrix * alpha = gsl_matrix_alloc(5208, 100);
+    // gsl_matrix * beta = gsl_matrix_alloc(100,2);
+    // gsl_matrix * output = gsl_matrix_alloc(1,2);
+    // gsl_matrix * input = gsl_matrix_alloc(1,5208);
+    float alpha[5208][100];
+    float beta[100][2];
+    float output[1][2];
+    float input[1][5208];
 
     //read wav file to double array
     // SF_INFO inFileInfo;
@@ -39,11 +43,12 @@ int main(int argc, char* argv[])
     // sf_read_double (file, a, n_frames);
     // sf_close(file);
 
-    AudioFile<double> audioFile;
+    AudioFile<float> audioFile;
     audioFile.load (inp);
     int n_frames = audioFile.getNumSamplesPerChannel();
     int sampleRate = audioFile.getSampleRate();
-    auto a = audioFile.samples[0];
+    float* a = &audioFile.samples[0][0];
+    // double* a = &v[0];
 
 
     //set the samplerate, framesize and hop size
@@ -56,22 +61,30 @@ int main(int argc, char* argv[])
     get_stl_mfcc(input, inp, n_frames);
 
     //load the model weights from file
-    my_load_matrix("model/alpha.txt", 100, alpha);
-    my_load_matrix("model/beta.txt", 2, beta);
+    my_load_matrix<5208, 100>("model/alpha.txt", 100, alpha);
+    my_load_matrix<100, 2>("model/beta.txt", 2, beta);
 
     //predict the output
-    predict(input, alpha, beta, output);
-
-    if (output->data[0] < output->data[1])
+    float *input1D = (float *) input;
+    float *output1D = (float *) output;
+    float *alpha1D = (float *) alpha;
+    float *beta1D = (float *) beta;
+    predict(input1D, alpha1D, beta1D, output1D);
+    
+    // if (output->data[0] < output->data[1])
+    //     cout << "\nsiren\n" << endl;
+    // else
+    //     cout << "\nnot siren\n" << endl;
+    if (output[0][0] < output[0][1])
         cout << "\nsiren\n" << endl;
     else
         cout << "\nnot siren\n" << endl;
 
     //free memory
-    gsl_matrix_free(alpha);
-    gsl_matrix_free(beta);
-    gsl_matrix_free(output);
-    gsl_matrix_free(input);
+    // gsl_matrix_free(alpha);
+    // gsl_matrix_free(beta);
+    // gsl_matrix_free(output);
+    // gsl_matrix_free(input);
 
     return 0;
 }
